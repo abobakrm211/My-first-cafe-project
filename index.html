@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Cafe</h1>
+            <p>Fresh coffee, roasted with care, every single day.</p>
+            <a href="#menu" class="hero-btn">See Our Menu</a>
+        </div>
+
+
+        <svg class="hero-cup" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path class="steam" d="M70 40 q-8 15 0 25 q8 10 0 25" />
+            <path class="steam" d="M100 30 q-8 15 0 25 q8 10 0 25" />
+            <path class="steam" d="M130 40 q-8 15 0 25 q8 10 0 25" />
+            <path d="M40 90 h120 l-10 70 a15 15 0 0 1 -15 13 H65 a15 15 0 0 1 -15 -13 z" />
+            <path class="handle" d="M160 100 q30 -5 30 25 q0 30 -30 25" />
+            <rect x="35" y="80" width="130" height="14" rx="4" />
+        </svg>
+    </header>
+
+
+    <div class="bean-divider">
+        <span>●</span><span>●</span><span>●</span>
+    </div>
+
+
+    <section class="box about">
+        <h2>About Us</h2>
+        <p>A small cafe that serves fresh coffee at simple prices. We roast in small batches every week so every cup
+            tastes like it should — warm, honest, and never rushed.</p>
+    </section>
+
+    <div class="bean-divider">
+        <span>●</span><span>●</span><span>●</span>
+    </div>
+
+
+    <section class="box" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="https://img.freepik.com/premium-photo/cup-black-coffee-isolated_839035-429379.jpg"
+                    alt="Black Coffee">
+                <h3>Black Coffee</h3>
+                <p class="desc">Strong and bold, no milk needed.</p>
+                <span class="price">40.Eg</span>
+            </div>
+            <div class="menu-card">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.kB34uN5wUQzCJZViJsLnYwHaE7?r=0&pid=ImgDet&w=184&h=122&c=7&dpr=1.3&o=7&rm=3"
+                    alt="Coffee with Milk">
+                <h3>Coffee with Milk</h3>
+                <p class="desc">Smooth and creamy, a morning favorite.</p>
+                <span class="price">35.Eg</span>
+            </div>
+            <div class="menu-card">
+                <img src="https://th.bing.com/th/id/OIP.6WNdFsvH6kVsUgItwLDvygHaHa?w=167&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                    alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <p class="desc">Rich espresso topped with soft foam.</p>
+                <span class="price">60.Eg</span>
+            </div>
+            <div class="menu-card">
+                <img src="https://th.bing.com/th/id/OIP.LU1tDW4_HYgM0lasXfwEsAHaHa?w=220&h=184&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                    alt="Tea">
+                <h3>Tea</h3>
+                <p class="desc">Light, warm, and relaxing.</p>
+                <span class="price">20.Eg</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="bean-divider">
+        <span>●</span><span>●</span><span>●</span>
+    </div>
+
+
+    <section class="box">
+        <h2>Order Now</h2>
+        <form id="orderForm" class="order-form">
+            <div class="form-row">
+                <label for="nameInput">Your Name</label>
+                <input type="text" id="nameInput" placeholder="Your Name">
+            </div>
+            <div class="form-row">
+                <label for="phoneInput">Phone Number</label>
+                <input type="tel" id="phoneInput" placeholder="01########">
+            </div>
+            <div class="form-row">
+                <label for="itemSelect">Choose an Item</label>
+                <select id="itemSelect">
+                    <option value="Black Coffee">Black Coffee - 40.Eg</option>
+                    <option value="Coffee with Milk">Coffee with Milk - 35.Eg</option>
+                    <option value="Cappuccino">Cappuccino - 60.Eg</option>
+                    <option value="Espresso">Tea - 20.Eg</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="qtyInput">Quantity</label>
+                <input type="number" id="qtyInput" value="1" min="1">
+            </div>
+            <button type="submit" id="orderBtn">Place Order</button>
+            <p id="orderMsg"></p>
+        </form>
+    </section>
+
+    <div class="bean-divider">
+        <span>●</span><span>●</span><span>●</span>
+    </div>
+
+
+    <section class="box">
+        <h2>Rate Us</h2>
+        <p>How was your experience?</p>
+        <div class="stars" id="stars">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        <textarea id="reviewInput" placeholder="Write a comment"></textarea>
+        <br>
+        <button id="submitRatingBtn">Submit Rating</button>
+        <p id="ratingMsg"></p>
+    </section>
+
+
+    <section class="box">
+        <h2>Change Page Style</h2>
+        <button id="lightBtn">Light Mode</button>
+        <button id="darkBtn">Dark Mode</button>
+    </section>
+
+    <footer>
+        <p>Cafe © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
